@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  fill: rgb(255, 232, 31);
+  width: 550px;
+  height: 100.92px;
+  margin-top: 2em;
+}
+.container {
+   display: grid;
+  width: 100%;
+  grid-template-columns: 0.1fr 0.1fr  0.1fr;
+  grid-template-rows: 320px 320px ;
+  row-gap: 0.5em;
+  column-gap: 1em;
+  height: max-content;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  gap: 1.5em;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  width: 349.98px;
+  height: fit-content;
+  gap: 0.1em;
+  padding: 1em;
+  border-radius: 0.3em;
+  transform: perspective(1px) translateZ(0px);
+  box-shadow: transparent 0px 0px 10px 3px, rgb(0, 0, 0) 0px 0px 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.crawl {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  margin-top: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4em;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5em;
+}
+
+.movie:hover {
+  box-shadow: rgb(32, 152, 209) 0px 0px 10px 3px, rgb(0, 0, 0) 0px 0px 10px;
+}
+.container li:nth-child(1) {
+  background: url("https://finmavis.github.io/swapi-task/static/media/bg-card-1.0c96fd00.png");
+  background-size: cover;
+}
+
+.container li:nth-child(2) {
+  background: url("https://finmavis.github.io/swapi-task/static/media/bg-card-2.b0a7b209.png");
+  background-size: cover;
+}
+
+.container li:nth-child(3) {
+  background: url("https://finmavis.github.io/swapi-task/static/media/bg-card-3.1914d853.png");
+  background-size: cover;
+}
+
+.container li:nth-child(4) {
+  background: url("https://finmavis.github.io/swapi-task/static/media/bg-card-4.c21c4d4b.png");
+  background-size: cover;
+}
+
+.container li:nth-child(5) {
+  background: url("https://finmavis.github.io/swapi-task/static/media/bg-card-5.67d061d6.png");
+  background-size: cover;
+}
+
+.container li:nth-child(6) {
+  background: url("https://finmavis.github.io/swapi-task/static/media/bg-card-6.b4fea25d.png");
+}
+
+.title {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.date {
+  color: rgb(157, 157, 157);
+  font-size: 0.9rem;
+}
+
+.container a {
+  border-top: 2px solid rgb(142, 46, 46);
+  color: rgb(255, 232, 31);
+  text-decoration: none;
+  padding-top: 1em;
+  font-size: 14px;
+}
+
+.detail__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+
+}
+
+
+.details__container{
+  background-color: rgba(35, 35, 35);;
+  margin: 2em 8em 2em 8em;
+  border-radius: 0.5em;
+  padding: 2em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.details__container button{
+  background: none;
+  color: rgb(157, 157, 157);
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.details h2{
+  color: rgb(157, 157, 157);
+  margin-bottom: 0.5em;
+}
+
+.creators{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.creators p{
+  font-size: 18px;
+}
+
+.creators h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.details ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
+.detail__title{
+  border-top: solid 2px rgb(60, 60, 60);
+  padding: 1em;
+}
+
+.details li{
+   flex-basis: calc(33.33% - 10px); 
+}
